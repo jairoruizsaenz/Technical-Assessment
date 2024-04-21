@@ -7639,22 +7639,7 @@ h2 {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto" style="font-size: 135%;">
                 <li class="nav-item pe-2"><a class="nav-link" style="color: black !important; font-weight: 600;" href="https://jairo.digital/Technical-Assessment/">Home</a></li>
-                <li class="nav-item pe-2"><a class="nav-link" style="color: black !important; font-weight: 600;" href="https://jairo.digital/Technical-Assessment/">Download report</a></li>
-                <!-- <li class="nav-item dropdown pe-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Analysis
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="https://jairo.digital/Technical-Assessment/data_cleaning/high_school">ANALYSIS</a></li>
-                      <li><a class="dropdown-item" href="https://jairo.digital/Technical-Assessment/analysis/high_school">High School - Analysis</a></li>
-                      <li><a class="dropdown-item" href="#">Undergraduate School- Data cleaning</a></li>
-                      <li><a class="dropdown-item" href="#">Undergraduate School - Analysis</a></li>
-                      <li><a class="dropdown-item" href="#">Graduate School - Analysis</a></li>
-                      <li><a class="dropdown-item" href="#">Graduate School - Analysis</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Conclusions</a></li>
-                    </ul>
-                  </li> -->
+                <!-- <li class="nav-item pe-2"><a class="nav-link" style="color: black !important; font-weight: 600;" href="https://jairo.digital/Technical-Assessment/">Download report</a></li> -->
                 <li class="nav-item pe-2"><a class="nav-link" style="color: black !important; font-weight: 600;" href="https://github.com/jairoruizsaenz/Technical-Assessment/" target="_blank">Code Repository</a></li>
             </ul>
         </div>
@@ -7674,10 +7659,53 @@ h2 {
                 <p class="eyebrow-text">Data Analysis</p>
                 <!-- <h2 class="balance-text pb-3">When you put people first, <span class="text-red">everything else falls into place</span></h2> -->
                 <h2 class="balance-text pb-3"><span class="text-red">Conclusions</span></h2>
-                <p class="text-module__content">Welcome to the website showcasing the deliverables for the S&P technical assessment, performed by me (<a href="https://jairo.digital/" class="link-text-red">Jairo Ruiz Saenz</a>). I am a passionate python developer with a strong background in data analysis, data visualization, development of web applications, and process automation using Python, Django, AWS, and other technologies. Participating in this technical assessment has been an exciting opportunity for me to apply my skills and knowledge to real-world problems.</p>
-                <p class="text-module__content">The primary purpose of this site is to present the step-by-step analysis process and conclusions of the technical assessment in a user-friendly manner. </p>
-                <p class="text-module__content">I would like to express my sincere gratitude for considering me for the role and for taking the time to review my work. It has been a rewarding experience to participate in this technical assessment, and I am eager for the opportunity to contribute to become part of S&P. Your feedback is valuable to me, so please feel free to reach out with any comments or suggestions.</p>
-                <p class="text-module__content">Without further ado, let's begin.</p>
+
+                <p class="text-module__content">
+                  A random forest model is particularly useful for regression problems that involve non-linear relationships between the dependent and independent variables. And also, provide us an easy way to interpret results by providing the most important features used to explain the independent variable.
+                </p>
+
+                <p class="text-module__content">
+                  Interpreting the results of the random forest model involves understanding various performance metrics and comparing them to assess the model's effectiveness. Let's break down the interpretation of each metric:
+                </p>
+                
+                <p class="text-module__content">
+                  <strong style="color:#666;">Training R^2 Score (Training Coefficient of Determination)</strong>: Measures the proportion of the variance in the target variable (production) that is explained by the independent variables in the training data. In this case, a score is 0.9403, indicating that approximately <span class="link-text-red">94.03%</span> of the variance in the variable production can be explained by the features in the training data.
+                </p>
+                
+                <p class="text-module__content">
+                  <strong style="color:#666;">Test R^2 Score (Test Coefficient of Determination)</strong>: Measures the proportion of the variance in the target variable that is explained by the independent variables in the test data. A score of 0.6886 suggests that approximately <span class="link-text-red">68.25%</span> of the variance in the production is explained by the features in the test data. A high score indicates that the model generalizes well to unseen data.
+                </p>
+                
+                <p class="text-module__content">
+                  <strong style="color:#666;">MAPE (Mean Absolute Percentage Error)</strong>: MAPE measures the average magnitude of the percentage error between the predicted production values and the actual production values in the test data. A MAPE of 0.3662 indicates that, on average, the model's predictions deviate from the actual production values by approximately <span class="link-text-red">36.62%</span>.
+                </p>
+                
+                <p class="text-module__content">
+                  <strong style="color:#666;">RMSE (Root Mean Squared Error)</strong>: RMSE measures the average magnitude of the errors between the predicted production values and the actual production values in the test data. An RMSE of 671.67 indicates that, on average, the model's predictions deviate from the actual production values by <span class="link-text-red">approximately 671.67 mmcf</span> (million cubic feet).
+                </p>
+                
+                <p class="text-module__content">
+                  <strong style="color:#666;">Mean Cross-Validation Score</strong>: The mean cross-validation score provides an estimate of the model's performance on unseen data by averaging the R^2 scores from cross-validation folds. A mean cross-validation score of <span class="link-text-red">0.5967</span> suggests that the model performs consistently well across different subsets of the data.
+                </p>
+                
+                <p class="text-module__content">
+                  Additionally, we can see the top 5 features that explain the production are:
+                  <ul>
+                    <li class="text-module__content" style="margin: 0;">proppant volume (0.19674)</li>
+                    <li class="text-module__content" style="margin: 0;">tvd (ft) (0.12385)</li>
+                    <li class="text-module__content" style="margin: 0;">youngs modulus (0.08620)</li>
+                    <li class="text-module__content" style="margin: 0;">operator_operator 14 (0.08105)</li>
+                    <li class="text-module__content" style="margin: 0;">md (ft) (0.04643)</li>
+                  </ul>                  
+                </p>
+                
+                <p class="text-module__content">
+                  <strong style="color:#666;">
+                    In summary, based on the provided results, the random forest model demonstrates strong performance in terms of R^2 scores, MAPE, RMSE, and cross-validation score. Even though there is still room for improvement, with the available data the model shows relatively high predictive accuracy and generalization ability, making it a promising model for predicting production.
+                  </strong>
+                </p>
+
+                
             </div>
         </div>        
     </div>
