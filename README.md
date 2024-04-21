@@ -44,3 +44,10 @@ Once you have activated the virtual environment, you can install the required de
    ```bash
    pip install -r requirements.txt
    ```
+
+### Running the script
+
+Run the following command to open jupyter notebook, once it opens in the browser open the file analysis.ipynb
+   ```bash
+   jupyter notebook
+   ```
