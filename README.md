@@ -7,7 +7,7 @@ You can check the step-by-step analysis process and conclusions [here](https://j
 ## Important files
 
 1. analysis.ipynb: This file is a scripts in .ipynb (Interactive Python Notebook) that contains the analysis performed.
-1. profile_report.html: Contains a daa profiling report of the source data.
+1. profile_report.html: Contains a data profiling report of the source data.
 
 ## Installation
 
