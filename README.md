@@ -2,7 +2,7 @@
 
 Welcome! This repository contains the source code for my S&P Global Data Scientist Consultant – Commodity Insights Technical-Assessment 
 
-You can check the step-by-step analysis process and conclusions [here](https://jairo.digital/Technical-Assessment/)
+You can check the step-by-step analysis process and conclusions [here](https://jairo.digital/Technical-Assessment-SandP/)
 
 ## Important files
 
